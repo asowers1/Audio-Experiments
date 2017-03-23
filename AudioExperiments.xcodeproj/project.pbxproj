@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		664CC1781E845A0E000C3C00 /* bluetooth_connect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1671E845A0E000C3C00 /* bluetooth_connect.wav */; };
+		664CC1791E845A0E000C3C00 /* bluetooth_search.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1681E845A0E000C3C00 /* bluetooth_search.wav */; };
+		664CC17A1E845A0E000C3C00 /* connect_fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1691E845A0E000C3C00 /* connect_fail.wav */; };
+		664CC17B1E845A0E000C3C00 /* hang_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16A1E845A0E000C3C00 /* hang_up.wav */; };
+		664CC17C1E845A0E000C3C00 /* low_battery.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16B1E845A0E000C3C00 /* low_battery.wav */; };
+		664CC17D1E845A0E000C3C00 /* pickup_call01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16C1E845A0E000C3C00 /* pickup_call01.wav */; };
+		664CC17E1E845A0E000C3C00 /* pickup_call02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16D1E845A0E000C3C00 /* pickup_call02.wav */; };
+		664CC17F1E845A0E000C3C00 /* play.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16E1E845A0E000C3C00 /* play.wav */; };
+		664CC1801E845A0E000C3C00 /* power_down.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16F1E845A0E000C3C00 /* power_down.wav */; };
+		664CC1811E845A0E000C3C00 /* power_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1701E845A0E000C3C00 /* power_up.wav */; };
+		664CC1821E845A0E000C3C00 /* reject_call01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1711E845A0E000C3C00 /* reject_call01.wav */; };
+		664CC1831E845A0E000C3C00 /* reject_call02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1721E845A0E000C3C00 /* reject_call02.wav */; };
+		664CC1841E845A0E000C3C00 /* voc_battery_out_pwrdn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1731E845A0E000C3C00 /* voc_battery_out_pwrdn.wav */; };
+		664CC1851E845A0E000C3C00 /* voc_call_rejected.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1741E845A0E000C3C00 /* voc_call_rejected.wav */; };
+		664CC1861E845A0E000C3C00 /* voc_sb_notconnected.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1751E845A0E000C3C00 /* voc_sb_notconnected.wav */; };
+		664CC1871E845A0E000C3C00 /* volume_down.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1761E845A0E000C3C00 /* volume_down.wav */; };
+		664CC1881E845A0E000C3C00 /* volume_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1771E845A0E000C3C00 /* volume_up.wav */; };
 		665F5E5C1E80674100AB9155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5E5B1E80674100AB9155 /* AppDelegate.swift */; };
 		665F5E5E1E80674100AB9155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5E5D1E80674100AB9155 /* ViewController.swift */; };
 		665F5E611E80674100AB9155 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665F5E5F1E80674100AB9155 /* Main.storyboard */; };
@@ -14,6 +31,7 @@
 		665F5E661E80674100AB9155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665F5E641E80674100AB9155 /* LaunchScreen.storyboard */; };
 		665F5E711E80674100AB9155 /* AudioExperimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5E701E80674100AB9155 /* AudioExperimentsTests.swift */; };
 		665F5E7C1E80674100AB9155 /* AudioExperimentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5E7B1E80674100AB9155 /* AudioExperimentsUITests.swift */; };
+		66EE98091E8475C50004CC57 /* VO_heather_SU_8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +52,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		664CC1671E845A0E000C3C00 /* bluetooth_connect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bluetooth_connect.wav; sourceTree = "<group>"; };
+		664CC1681E845A0E000C3C00 /* bluetooth_search.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bluetooth_search.wav; sourceTree = "<group>"; };
+		664CC1691E845A0E000C3C00 /* connect_fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = connect_fail.wav; sourceTree = "<group>"; };
+		664CC16A1E845A0E000C3C00 /* hang_up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hang_up.wav; sourceTree = "<group>"; };
+		664CC16B1E845A0E000C3C00 /* low_battery.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = low_battery.wav; sourceTree = "<group>"; };
+		664CC16C1E845A0E000C3C00 /* pickup_call01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickup_call01.wav; sourceTree = "<group>"; };
+		664CC16D1E845A0E000C3C00 /* pickup_call02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = pickup_call02.wav; sourceTree = "<group>"; };
+		664CC16E1E845A0E000C3C00 /* play.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = play.wav; sourceTree = "<group>"; };
+		664CC16F1E845A0E000C3C00 /* power_down.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = power_down.wav; sourceTree = "<group>"; };
+		664CC1701E845A0E000C3C00 /* power_up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = power_up.wav; sourceTree = "<group>"; };
+		664CC1711E845A0E000C3C00 /* reject_call01.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reject_call01.wav; sourceTree = "<group>"; };
+		664CC1721E845A0E000C3C00 /* reject_call02.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = reject_call02.wav; sourceTree = "<group>"; };
+		664CC1731E845A0E000C3C00 /* voc_battery_out_pwrdn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = voc_battery_out_pwrdn.wav; sourceTree = "<group>"; };
+		664CC1741E845A0E000C3C00 /* voc_call_rejected.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = voc_call_rejected.wav; sourceTree = "<group>"; };
+		664CC1751E845A0E000C3C00 /* voc_sb_notconnected.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = voc_sb_notconnected.wav; sourceTree = "<group>"; };
+		664CC1761E845A0E000C3C00 /* volume_down.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = volume_down.wav; sourceTree = "<group>"; };
+		664CC1771E845A0E000C3C00 /* volume_up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = volume_up.wav; sourceTree = "<group>"; };
 		665F5E581E80674100AB9155 /* AudioExperiments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioExperiments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		665F5E5B1E80674100AB9155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		665F5E5D1E80674100AB9155 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +82,7 @@
 		665F5E771E80674100AB9155 /* AudioExperimentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioExperimentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		665F5E7B1E80674100AB9155 /* AudioExperimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioExperimentsUITests.swift; sourceTree = "<group>"; };
 		665F5E7D1E80674100AB9155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = VO_heather_SU_8.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +110,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		664CC1661E845A0E000C3C00 /* 44KNzAudioprompts */ = {
+			isa = PBXGroup;
+			children = (
+				664CC1671E845A0E000C3C00 /* bluetooth_connect.wav */,
+				664CC1681E845A0E000C3C00 /* bluetooth_search.wav */,
+				664CC1691E845A0E000C3C00 /* connect_fail.wav */,
+				664CC16A1E845A0E000C3C00 /* hang_up.wav */,
+				664CC16B1E845A0E000C3C00 /* low_battery.wav */,
+				664CC16C1E845A0E000C3C00 /* pickup_call01.wav */,
+				664CC16D1E845A0E000C3C00 /* pickup_call02.wav */,
+				664CC16E1E845A0E000C3C00 /* play.wav */,
+				664CC16F1E845A0E000C3C00 /* power_down.wav */,
+				664CC1701E845A0E000C3C00 /* power_up.wav */,
+				664CC1711E845A0E000C3C00 /* reject_call01.wav */,
+				664CC1721E845A0E000C3C00 /* reject_call02.wav */,
+				664CC1731E845A0E000C3C00 /* voc_battery_out_pwrdn.wav */,
+				664CC1741E845A0E000C3C00 /* voc_call_rejected.wav */,
+				664CC1751E845A0E000C3C00 /* voc_sb_notconnected.wav */,
+				664CC1761E845A0E000C3C00 /* volume_down.wav */,
+				664CC1771E845A0E000C3C00 /* volume_up.wav */,
+				66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */,
+			);
+			path = 44KNzAudioprompts;
+			sourceTree = "<group>";
+		};
 		665F5E4F1E80674000AB9155 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +164,7 @@
 				665F5E621E80674100AB9155 /* Assets.xcassets */,
 				665F5E641E80674100AB9155 /* LaunchScreen.storyboard */,
 				665F5E671E80674100AB9155 /* Info.plist */,
+				664CC1661E845A0E000C3C00 /* 44KNzAudioprompts */,
 			);
 			path = AudioExperiments;
 			sourceTree = "<group>";
@@ -195,6 +257,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 72N7PHVMGE;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					665F5E6B1E80674100AB9155 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -235,9 +302,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				664CC1791E845A0E000C3C00 /* bluetooth_search.wav in Resources */,
+				664CC1781E845A0E000C3C00 /* bluetooth_connect.wav in Resources */,
+				664CC1811E845A0E000C3C00 /* power_up.wav in Resources */,
+				664CC17E1E845A0E000C3C00 /* pickup_call02.wav in Resources */,
+				66EE98091E8475C50004CC57 /* VO_heather_SU_8.wav in Resources */,
+				664CC1851E845A0E000C3C00 /* voc_call_rejected.wav in Resources */,
+				664CC1881E845A0E000C3C00 /* volume_up.wav in Resources */,
+				664CC17B1E845A0E000C3C00 /* hang_up.wav in Resources */,
+				664CC1861E845A0E000C3C00 /* voc_sb_notconnected.wav in Resources */,
 				665F5E661E80674100AB9155 /* LaunchScreen.storyboard in Resources */,
 				665F5E631E80674100AB9155 /* Assets.xcassets in Resources */,
+				664CC17D1E845A0E000C3C00 /* pickup_call01.wav in Resources */,
+				664CC1841E845A0E000C3C00 /* voc_battery_out_pwrdn.wav in Resources */,
 				665F5E611E80674100AB9155 /* Main.storyboard in Resources */,
+				664CC1831E845A0E000C3C00 /* reject_call02.wav in Resources */,
+				664CC17A1E845A0E000C3C00 /* connect_fail.wav in Resources */,
+				664CC17C1E845A0E000C3C00 /* low_battery.wav in Resources */,
+				664CC1801E845A0E000C3C00 /* power_down.wav in Resources */,
+				664CC1821E845A0E000C3C00 /* reject_call01.wav in Resources */,
+				664CC17F1E845A0E000C3C00 /* play.wav in Resources */,
+				664CC1871E845A0E000C3C00 /* volume_down.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +599,7 @@
 				665F5E821E80674100AB9155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		665F5E831E80674100AB9155 /* Build configuration list for PBXNativeTarget "AudioExperimentsTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +608,7 @@
 				665F5E851E80674100AB9155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		665F5E861E80674100AB9155 /* Build configuration list for PBXNativeTarget "AudioExperimentsUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +617,7 @@
 				665F5E881E80674100AB9155 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
