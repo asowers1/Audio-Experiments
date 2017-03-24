@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0853FE8C5B6907A055DE6FF8 /* Pods_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E778E513BE3F2CAD699BD11 /* Pods_NotificationServiceExtension.framework */; };
+		414DC734F26F3B523087EE48 /* Pods_AudioExperimentsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB5905A6B7207742FF2B934 /* Pods_AudioExperimentsUITests.framework */; };
+		450D59107AE9952FC6557361 /* Pods_AudioExperimentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5D8530F4F98814F6113A63 /* Pods_AudioExperimentsTests.framework */; };
+		663C9A491E855FD90006F838 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C9A481E855FD90006F838 /* NotificationService.swift */; };
+		663C9A4D1E855FD90006F838 /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 663C9A461E855FD90006F838 /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		664CC1781E845A0E000C3C00 /* bluetooth_connect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1671E845A0E000C3C00 /* bluetooth_connect.wav */; };
 		664CC1791E845A0E000C3C00 /* bluetooth_search.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1681E845A0E000C3C00 /* bluetooth_search.wav */; };
 		664CC17A1E845A0E000C3C00 /* connect_fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1691E845A0E000C3C00 /* connect_fail.wav */; };
@@ -32,9 +37,17 @@
 		665F5E711E80674100AB9155 /* AudioExperimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5E701E80674100AB9155 /* AudioExperimentsTests.swift */; };
 		665F5E7C1E80674100AB9155 /* AudioExperimentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5E7B1E80674100AB9155 /* AudioExperimentsUITests.swift */; };
 		66EE98091E8475C50004CC57 /* VO_heather_SU_8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */; };
+		F253944A111F203F2EC3C337 /* Pods_AudioExperiments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB021D10448F8EE98710533 /* Pods_AudioExperiments.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		663C9A4B1E855FD90006F838 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 665F5E501E80674000AB9155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 663C9A451E855FD90006F838;
+			remoteInfo = NotificationServiceExtension;
+		};
 		665F5E6D1E80674100AB9155 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 665F5E501E80674000AB9155 /* Project object */;
@@ -51,7 +64,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		663C9A511E855FD90006F838 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				663C9A4D1E855FD90006F838 /* NotificationServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1E778E513BE3F2CAD699BD11 /* Pods_NotificationServiceExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NotificationServiceExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B66EC0C7324B879C42ACAED /* Pods-AudioExperimentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperimentsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperimentsUITests/Pods-AudioExperimentsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		417AEB90DCF874A39390F4E6 /* Pods-AudioExperiments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperiments.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperiments/Pods-AudioExperiments.debug.xcconfig"; sourceTree = "<group>"; };
+		43EECA866EF1BC6F1A4CD2F0 /* Pods-AudioExperimentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperimentsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperimentsTests/Pods-AudioExperimentsTests.release.xcconfig"; sourceTree = "<group>"; };
+		663C9A461E855FD90006F838 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		663C9A481E855FD90006F838 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		663C9A4A1E855FD90006F838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		664CC1671E845A0E000C3C00 /* bluetooth_connect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bluetooth_connect.wav; sourceTree = "<group>"; };
 		664CC1681E845A0E000C3C00 /* bluetooth_search.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = bluetooth_search.wav; sourceTree = "<group>"; };
 		664CC1691E845A0E000C3C00 /* connect_fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = connect_fail.wav; sourceTree = "<group>"; };
@@ -83,13 +117,30 @@
 		665F5E7B1E80674100AB9155 /* AudioExperimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioExperimentsUITests.swift; sourceTree = "<group>"; };
 		665F5E7D1E80674100AB9155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = VO_heather_SU_8.wav; sourceTree = "<group>"; };
+		9DB3BDDD0EC859A7D59DC6B4 /* Pods-AudioExperiments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperiments.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperiments/Pods-AudioExperiments.release.xcconfig"; sourceTree = "<group>"; };
+		ACB021D10448F8EE98710533 /* Pods_AudioExperiments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioExperiments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D41B181CEC5854B3BF106FF7 /* Pods-AudioExperimentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperimentsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperimentsTests/Pods-AudioExperimentsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DB2115152CCDA1C2EA8F122B /* Pods-NotificationServiceExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.release.xcconfig"; sourceTree = "<group>"; };
+		DEF57041DBF326AE883EC272 /* Pods-NotificationServiceExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NotificationServiceExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		EC5D8530F4F98814F6113A63 /* Pods_AudioExperimentsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioExperimentsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB5905A6B7207742FF2B934 /* Pods_AudioExperimentsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioExperimentsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FACBF52AE7BB212C79235268 /* Pods-AudioExperimentsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperimentsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperimentsUITests/Pods-AudioExperimentsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		663C9A431E855FD90006F838 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0853FE8C5B6907A055DE6FF8 /* Pods_NotificationServiceExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		665F5E551E80674100AB9155 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F253944A111F203F2EC3C337 /* Pods_AudioExperiments.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				450D59107AE9952FC6557361 /* Pods_AudioExperimentsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,12 +156,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				414DC734F26F3B523087EE48 /* Pods_AudioExperimentsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03D35F1D1A20B4E78DCCABEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				417AEB90DCF874A39390F4E6 /* Pods-AudioExperiments.debug.xcconfig */,
+				9DB3BDDD0EC859A7D59DC6B4 /* Pods-AudioExperiments.release.xcconfig */,
+				D41B181CEC5854B3BF106FF7 /* Pods-AudioExperimentsTests.debug.xcconfig */,
+				43EECA866EF1BC6F1A4CD2F0 /* Pods-AudioExperimentsTests.release.xcconfig */,
+				FACBF52AE7BB212C79235268 /* Pods-AudioExperimentsUITests.debug.xcconfig */,
+				2B66EC0C7324B879C42ACAED /* Pods-AudioExperimentsUITests.release.xcconfig */,
+				DEF57041DBF326AE883EC272 /* Pods-NotificationServiceExtension.debug.xcconfig */,
+				DB2115152CCDA1C2EA8F122B /* Pods-NotificationServiceExtension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		0EC7DB109063BFFC1F399B5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACB021D10448F8EE98710533 /* Pods_AudioExperiments.framework */,
+				EC5D8530F4F98814F6113A63 /* Pods_AudioExperimentsTests.framework */,
+				FAB5905A6B7207742FF2B934 /* Pods_AudioExperimentsUITests.framework */,
+				1E778E513BE3F2CAD699BD11 /* Pods_NotificationServiceExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		663C9A471E855FD90006F838 /* NotificationServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				663C9A481E855FD90006F838 /* NotificationService.swift */,
+				663C9A4A1E855FD90006F838 /* Info.plist */,
+			);
+			path = NotificationServiceExtension;
+			sourceTree = "<group>";
+		};
 		664CC1661E845A0E000C3C00 /* 44KNzAudioprompts */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,7 +229,10 @@
 				665F5E5A1E80674100AB9155 /* AudioExperiments */,
 				665F5E6F1E80674100AB9155 /* AudioExperimentsTests */,
 				665F5E7A1E80674100AB9155 /* AudioExperimentsUITests */,
+				663C9A471E855FD90006F838 /* NotificationServiceExtension */,
 				665F5E591E80674100AB9155 /* Products */,
+				03D35F1D1A20B4E78DCCABEA /* Pods */,
+				0EC7DB109063BFFC1F399B5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +242,7 @@
 				665F5E581E80674100AB9155 /* AudioExperiments.app */,
 				665F5E6C1E80674100AB9155 /* AudioExperimentsTests.xctest */,
 				665F5E771E80674100AB9155 /* AudioExperimentsUITests.xctest */,
+				663C9A461E855FD90006F838 /* NotificationServiceExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,17 +282,41 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		665F5E571E80674100AB9155 /* AudioExperiments */ = {
+		663C9A451E855FD90006F838 /* NotificationServiceExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 665F5E801E80674100AB9155 /* Build configuration list for PBXNativeTarget "AudioExperiments" */;
+			buildConfigurationList = 663C9A501E855FD90006F838 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
 			buildPhases = (
-				665F5E541E80674100AB9155 /* Sources */,
-				665F5E551E80674100AB9155 /* Frameworks */,
-				665F5E561E80674100AB9155 /* Resources */,
+				EB08B1F2EEE5AD4B046731D5 /* [CP] Check Pods Manifest.lock */,
+				663C9A421E855FD90006F838 /* Sources */,
+				663C9A431E855FD90006F838 /* Frameworks */,
+				663C9A441E855FD90006F838 /* Resources */,
+				775BE655C2205146F59694BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = NotificationServiceExtension;
+			productName = NotificationServiceExtension;
+			productReference = 663C9A461E855FD90006F838 /* NotificationServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		665F5E571E80674100AB9155 /* AudioExperiments */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 665F5E801E80674100AB9155 /* Build configuration list for PBXNativeTarget "AudioExperiments" */;
+			buildPhases = (
+				4F200F4EDED7A6B76D6F4066 /* [CP] Check Pods Manifest.lock */,
+				665F5E541E80674100AB9155 /* Sources */,
+				665F5E551E80674100AB9155 /* Frameworks */,
+				665F5E561E80674100AB9155 /* Resources */,
+				663C9A511E855FD90006F838 /* Embed App Extensions */,
+				5F8A16FC0D0C7748A0BCCD5F /* [CP] Embed Pods Frameworks */,
+				DAF09D0E43CD0388BEE4FC81 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				663C9A4C1E855FD90006F838 /* PBXTargetDependency */,
 			);
 			name = AudioExperiments;
 			productName = AudioExperiments;
@@ -211,9 +327,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 665F5E831E80674100AB9155 /* Build configuration list for PBXNativeTarget "AudioExperimentsTests" */;
 			buildPhases = (
+				29FC4FCA66B5F88B4FC0D05C /* [CP] Check Pods Manifest.lock */,
 				665F5E681E80674100AB9155 /* Sources */,
 				665F5E691E80674100AB9155 /* Frameworks */,
 				665F5E6A1E80674100AB9155 /* Resources */,
+				376069406189528EBEEEC93C /* [CP] Embed Pods Frameworks */,
+				FE613DC70C7F5AF2D2116812 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -229,9 +348,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 665F5E861E80674100AB9155 /* Build configuration list for PBXNativeTarget "AudioExperimentsUITests" */;
 			buildPhases = (
+				7827DCD43B07A99F5E894DF7 /* [CP] Check Pods Manifest.lock */,
 				665F5E731E80674100AB9155 /* Sources */,
 				665F5E741E80674100AB9155 /* Frameworks */,
 				665F5E751E80674100AB9155 /* Resources */,
+				AFA2DA4BA525AC74431B0215 /* [CP] Embed Pods Frameworks */,
+				417A9558BBDEACBE30C0AF7A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +375,11 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = SkyBuds;
 				TargetAttributes = {
+					663C9A451E855FD90006F838 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 72N7PHVMGE;
+						ProvisioningStyle = Automatic;
+					};
 					665F5E571E80674100AB9155 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 72N7PHVMGE;
@@ -293,11 +420,19 @@
 				665F5E571E80674100AB9155 /* AudioExperiments */,
 				665F5E6B1E80674100AB9155 /* AudioExperimentsTests */,
 				665F5E761E80674100AB9155 /* AudioExperimentsUITests */,
+				663C9A451E855FD90006F838 /* NotificationServiceExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		663C9A441E855FD90006F838 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		665F5E561E80674100AB9155 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -342,7 +477,183 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29FC4FCA66B5F88B4FC0D05C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		376069406189528EBEEEC93C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioExperimentsTests/Pods-AudioExperimentsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		417A9558BBDEACBE30C0AF7A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioExperimentsUITests/Pods-AudioExperimentsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F200F4EDED7A6B76D6F4066 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5F8A16FC0D0C7748A0BCCD5F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioExperiments/Pods-AudioExperiments-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		775BE655C2205146F59694BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NotificationServiceExtension/Pods-NotificationServiceExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7827DCD43B07A99F5E894DF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFA2DA4BA525AC74431B0215 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioExperimentsUITests/Pods-AudioExperimentsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DAF09D0E43CD0388BEE4FC81 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioExperiments/Pods-AudioExperiments-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB08B1F2EEE5AD4B046731D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE613DC70C7F5AF2D2116812 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AudioExperimentsTests/Pods-AudioExperimentsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		663C9A421E855FD90006F838 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				663C9A491E855FD90006F838 /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		665F5E541E80674100AB9155 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +682,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		663C9A4C1E855FD90006F838 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 663C9A451E855FD90006F838 /* NotificationServiceExtension */;
+			targetProxy = 663C9A4B1E855FD90006F838 /* PBXContainerItemProxy */;
+		};
 		665F5E6E1E80674100AB9155 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 665F5E571E80674100AB9155 /* AudioExperiments */;
@@ -403,6 +719,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		663C9A4E1E855FD90006F838 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEF57041DBF326AE883EC272 /* Pods-NotificationServiceExtension.debug.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 72N7PHVMGE;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkyBuds.AudioExperiments.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		663C9A4F1E855FD90006F838 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB2115152CCDA1C2EA8F122B /* Pods-NotificationServiceExtension.release.xcconfig */;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 72N7PHVMGE;
+				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.SkyBuds.AudioExperiments.NotificationServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		665F5E7E1E80674100AB9155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -498,7 +842,9 @@
 		};
 		665F5E811E80674100AB9155 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 417AEB90DCF874A39390F4E6 /* Pods-AudioExperiments.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 72N7PHVMGE;
 				INFOPLIST_FILE = AudioExperiments/Info.plist;
@@ -511,7 +857,9 @@
 		};
 		665F5E821E80674100AB9155 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DB3BDDD0EC859A7D59DC6B4 /* Pods-AudioExperiments.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 72N7PHVMGE;
 				INFOPLIST_FILE = AudioExperiments/Info.plist;
@@ -524,6 +872,7 @@
 		};
 		665F5E841E80674100AB9155 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D41B181CEC5854B3BF106FF7 /* Pods-AudioExperimentsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -539,6 +888,7 @@
 		};
 		665F5E851E80674100AB9155 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43EECA866EF1BC6F1A4CD2F0 /* Pods-AudioExperimentsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -554,6 +904,7 @@
 		};
 		665F5E871E80674100AB9155 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FACBF52AE7BB212C79235268 /* Pods-AudioExperimentsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 72N7PHVMGE;
@@ -568,6 +919,7 @@
 		};
 		665F5E881E80674100AB9155 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B66EC0C7324B879C42ACAED /* Pods-AudioExperimentsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 72N7PHVMGE;
@@ -583,6 +935,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		663C9A501E855FD90006F838 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				663C9A4E1E855FD90006F838 /* Debug */,
+				663C9A4F1E855FD90006F838 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		665F5E531E80674000AB9155 /* Build configuration list for PBXProject "AudioExperiments" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
