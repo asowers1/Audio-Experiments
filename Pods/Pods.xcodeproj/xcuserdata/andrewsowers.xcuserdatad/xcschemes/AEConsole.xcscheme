@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7F5A60EBDB6221C14DF4D533BB111F85'
-               BlueprintName = 'SwiftyUserDefaults'
+               BlueprintIdentifier = 'F038F6A79CC3FA1A67AACEE3F40A1A30'
+               BlueprintName = 'AEConsole'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftyUserDefaults.framework'>
+               BuildableName = 'AEConsole.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -36,6 +36,9 @@
 		665F5E661E80674100AB9155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665F5E641E80674100AB9155 /* LaunchScreen.storyboard */; };
 		665F5E711E80674100AB9155 /* AudioExperimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5E701E80674100AB9155 /* AudioExperimentsTests.swift */; };
 		665F5E7C1E80674100AB9155 /* AudioExperimentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5E7B1E80674100AB9155 /* AudioExperimentsUITests.swift */; };
+		669DB89E1E8AECF200C83620 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669DB89D1E8AECF200C83620 /* AudioToolbox.framework */; };
+		669DB8A01E8AED1F00C83620 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669DB89F1E8AED1F00C83620 /* GameKit.framework */; };
+		669DB8A21E8AF1EA00C83620 /* AEConsole.plist in Resources */ = {isa = PBXBuildFile; fileRef = 669DB8A11E8AF1EA00C83620 /* AEConsole.plist */; };
 		66B8BCD51E89D021008AE866 /* BLE_connect04.caf in Resources */ = {isa = PBXBuildFile; fileRef = 66B8BCD41E89D021008AE866 /* BLE_connect04.caf */; };
 		66B8BCD71E8AB207008AE866 /* RecorderEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B8BCD61E8AB207008AE866 /* RecorderEngine.swift */; };
 		66EE98091E8475C50004CC57 /* VO_heather_SU_8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */; };
@@ -119,6 +122,10 @@
 		665F5E771E80674100AB9155 /* AudioExperimentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioExperimentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		665F5E7B1E80674100AB9155 /* AudioExperimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioExperimentsUITests.swift; sourceTree = "<group>"; };
 		665F5E7D1E80674100AB9155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		669DB89C1E8AECEC00C83620 /* AudioExperiments.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AudioExperiments.entitlements; sourceTree = "<group>"; };
+		669DB89D1E8AECF200C83620 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		669DB89F1E8AED1F00C83620 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		669DB8A11E8AF1EA00C83620 /* AEConsole.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AEConsole.plist; sourceTree = "<group>"; };
 		66B8BCD41E89D021008AE866 /* BLE_connect04.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BLE_connect04.caf; sourceTree = "<group>"; };
 		66B8BCD61E8AB207008AE866 /* RecorderEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderEngine.swift; sourceTree = "<group>"; };
 		66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = VO_heather_SU_8.wav; sourceTree = "<group>"; };
@@ -146,7 +153,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669DB8A01E8AED1F00C83620 /* GameKit.framework in Frameworks */,
 				F253944A111F203F2EC3C337 /* Pods_AudioExperiments.framework in Frameworks */,
+				669DB89E1E8AECF200C83620 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +196,8 @@
 		0EC7DB109063BFFC1F399B5F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				669DB89F1E8AED1F00C83620 /* GameKit.framework */,
+				669DB89D1E8AECF200C83620 /* AudioToolbox.framework */,
 				ACB021D10448F8EE98710533 /* Pods_AudioExperiments.framework */,
 				EC5D8530F4F98814F6113A63 /* Pods_AudioExperimentsTests.framework */,
 				FAB5905A6B7207742FF2B934 /* Pods_AudioExperimentsUITests.framework */,
@@ -257,6 +268,7 @@
 		665F5E5A1E80674100AB9155 /* AudioExperiments */ = {
 			isa = PBXGroup;
 			children = (
+				669DB89C1E8AECEC00C83620 /* AudioExperiments.entitlements */,
 				665F5E5B1E80674100AB9155 /* AppDelegate.swift */,
 				665F5E5D1E80674100AB9155 /* ViewController.swift */,
 				66F2DE021E89AB1D00BE522B /* PlayerEngine.swift */,
@@ -265,6 +277,7 @@
 				665F5E621E80674100AB9155 /* Assets.xcassets */,
 				665F5E641E80674100AB9155 /* LaunchScreen.storyboard */,
 				665F5E671E80674100AB9155 /* Info.plist */,
+				669DB8A11E8AF1EA00C83620 /* AEConsole.plist */,
 				664CC1661E845A0E000C3C00 /* 44KNzAudioprompts */,
 			);
 			path = AudioExperiments;
@@ -386,15 +399,30 @@
 				TargetAttributes = {
 					663C9A451E855FD90006F838 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 72N7PHVMGE;
+						DevelopmentTeam = DG5842TKF4;
 						ProvisioningStyle = Automatic;
 					};
 					665F5E571E80674100AB9155 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 72N7PHVMGE;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = DG5842TKF4;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.Siri = {
 								enabled = 1;
 							};
 						};
@@ -460,6 +488,7 @@
 				664CC17D1E845A0E000C3C00 /* pickup_call01.wav in Resources */,
 				664CC1841E845A0E000C3C00 /* voc_battery_out_pwrdn.wav in Resources */,
 				665F5E611E80674100AB9155 /* Main.storyboard in Resources */,
+				669DB8A21E8AF1EA00C83620 /* AEConsole.plist in Resources */,
 				664CC1831E845A0E000C3C00 /* reject_call02.wav in Resources */,
 				664CC17A1E845A0E000C3C00 /* connect_fail.wav in Resources */,
 				664CC17C1E845A0E000C3C00 /* low_battery.wav in Resources */,
@@ -735,10 +764,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DEF57041DBF326AE883EC272 /* Pods-NotificationServiceExtension.debug.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 72N7PHVMGE;
+				DEVELOPMENT_TEAM = DG5842TKF4;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SkyBuds.AudioExperiments.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -749,10 +778,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DB2115152CCDA1C2EA8F122B /* Pods-NotificationServiceExtension.release.xcconfig */;
 			buildSettings = {
-				DEVELOPMENT_TEAM = 72N7PHVMGE;
+				DEVELOPMENT_TEAM = DG5842TKF4;
 				INFOPLIST_FILE = NotificationServiceExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SkyBuds.AudioExperiments.NotificationServiceExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.NotificationServiceExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
@@ -858,11 +887,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 72N7PHVMGE;
+				CODE_SIGN_ENTITLEMENTS = AudioExperiments/AudioExperiments.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Sowers (E9BA7USTPP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrew Sowers (E9BA7USTPP)";
+				DEVELOPMENT_TEAM = DG5842TKF4;
 				INFOPLIST_FILE = AudioExperiments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SkyBuds.AudioExperiments;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d86ab786-7433-4eda-bff1-285185644938";
+				PROVISIONING_PROFILE_SPECIFIER = "Skybuds Audio Experiments Development";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -873,11 +907,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 72N7PHVMGE;
+				CODE_SIGN_ENTITLEMENTS = AudioExperiments/AudioExperiments.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alpha Audiotronics, Inc. (72N7PHVMGE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Alpha Audiotronics, Inc.";
+				DEVELOPMENT_TEAM = DG5842TKF4;
 				INFOPLIST_FILE = AudioExperiments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.SkyBuds.AudioExperiments;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "732d418f-862c-4601-ba3d-bfa714185e67";
+				PROVISIONING_PROFILE_SPECIFIER = "Skybuds Audio Experiments AdHoc Distribution";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

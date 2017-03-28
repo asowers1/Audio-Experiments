@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '7F5A60EBDB6221C14DF4D533BB111F85'
-               BlueprintName = 'SwiftyUserDefaults'
+               BlueprintIdentifier = 'EFE76EE164F7F80044CE110959154733'
+               BlueprintName = 'AELog'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SwiftyUserDefaults.framework'>
+               BuildableName = 'AELog.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

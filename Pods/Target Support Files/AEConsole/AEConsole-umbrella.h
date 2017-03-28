@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_AudioExperimentsUITestsVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_AudioExperimentsUITestsVersionString[];
+FOUNDATION_EXPORT double AEConsoleVersionNumber;
+FOUNDATION_EXPORT const unsigned char AEConsoleVersionString[];
 

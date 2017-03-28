@@ -12,7 +12,7 @@ import UserNotifications
 
 class ViewController: UITableViewController {
 
-    let actions = ["schedule news", "schedule recording"]
+    let actions = ["schedule news", "schedule recording", "schedule stop recording"]
     var player: AVPlayer?
     
     var isGrantedNotificationAccess:Bool = false
@@ -72,17 +72,31 @@ class ViewController: UITableViewController {
         
         UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
+    
+    func postLocalStopRecordingNotifciation() {
+        let content = UNMutableNotificationContent()
+        content.title = "Command Demo"
+        content.subtitle = "From Skybuds"
+        content.body = "Stop Record a command"
+        content.categoryIdentifier = "STOPRECORDING"
+        content.sound = UNNotificationSound(named: "BLE_connect04.caf")
+        
+        let trigger = UNTimeIntervalNotificationTrigger(
+            timeInterval: 5.0,
+            repeats: false)
+        
+        let request = UNNotificationRequest(
+            identifier: "com.skybuds.notifications.stop",
+            content: content,
+            trigger: trigger
+        )
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
 
     //MARK: - TableView -
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
-            try AVAudioSession.sharedInstance().setActive(true)
-        } catch {
-            print(error)
-        }
-        
         let action = actions[indexPath.row]
         
         switch action {
@@ -90,6 +104,8 @@ class ViewController: UITableViewController {
             self.postLocalNewsNotifciation()
         case "schedule recording":
             self.postLocalStartRecordingNotifciation()
+        case "schedule stop recording":
+            self.postLocalStopRecordingNotifciation()
         default:
             let alert = UIAlertController(title: "Not found", message: "there was no function found called \(action)", preferredStyle: .alert)
             self.present(alert, animated: true, completion: nil)

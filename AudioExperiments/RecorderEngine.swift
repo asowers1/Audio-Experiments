@@ -12,8 +12,12 @@ import RxSwift
 import RxCocoa
 import AVFoundation
 import UserNotifications
+import AELog
 
 final class RecorderEngine: NSObject, AVAudioRecorderDelegate {
+    
+    static let `default` = RecorderEngine()
+    
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     
@@ -21,6 +25,7 @@ final class RecorderEngine: NSObject, AVAudioRecorderDelegate {
         recordingSession = AVAudioSession.sharedInstance()
         
         do {
+            aelog("setup recorder")
             try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
             try recordingSession.setActive(true)
             recordingSession.requestRecordPermission() { [unowned self] allowed in
@@ -48,34 +53,15 @@ final class RecorderEngine: NSObject, AVAudioRecorderDelegate {
         ]
         
         do {
+            aelog("start recording")
             audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
             audioRecorder.delegate = self
             audioRecorder.record()
             
         } catch {
+            aelog("start recording failed")
             finishRecording(success: false)
         }
-    }
-    
-    func postLocalStopNotifciation() {
-        let content = UNMutableNotificationContent()
-        content.title = "Stop Recording"
-        content.subtitle = "stop this recording"
-        content.body = "Tap notification to stop"
-        content.categoryIdentifier = "STOPRECORDING"
-        content.sound = UNNotificationSound(named: "BLE_connect04.caf")
-        
-        let trigger = UNTimeIntervalNotificationTrigger(
-            timeInterval: 5.0,
-            repeats: false)
-        
-        let request = UNNotificationRequest(
-            identifier: "com.skybuds.notifications.stop",
-            content: content,
-            trigger: trigger
-        )
-        
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
     
     func getDocumentsDirectory() -> URL {
@@ -85,18 +71,20 @@ final class RecorderEngine: NSObject, AVAudioRecorderDelegate {
     }
     
     func finishRecording(success: Bool) {
-        audioRecorder.stop()
+        audioRecorder?.stop()
         audioRecorder = nil
         
         if success {
+            aelog("finish recording success")
             PlayerEngine.default.play(local: getDocumentsDirectory().appendingPathComponent("recording.m4a"))
         } else {
-            
+            print("finish recording failure")
             // recording failed :(
         }
     }
     
     func recordTapped() {
+        aelog("recordTapped")
         if audioRecorder == nil {
             startRecording()
         } else {

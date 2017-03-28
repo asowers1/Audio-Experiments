@@ -89,6 +89,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AEConsole/AEConsole.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AELog/AELog.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RxAVFoundation/RxAVFoundation.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RxBluetoothKit/RxBluetoothKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RxCocoa/RxCocoa.framework"
@@ -96,6 +98,8 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/SwiftyUserDefaults/SwiftyUserDefaults.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "$BUILT_PRODUCTS_DIR/AEConsole/AEConsole.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/AELog/AELog.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RxAVFoundation/RxAVFoundation.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RxBluetoothKit/RxBluetoothKit.framework"
   install_framework "$BUILT_PRODUCTS_DIR/RxCocoa/RxCocoa.framework"

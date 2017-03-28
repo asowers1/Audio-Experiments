@@ -9,6 +9,8 @@
 import UIKit
 import AVFoundation
 import UserNotifications
+import AEConsole
+import AELog
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -16,6 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    
+        AEConsole.launch(with: self)
         // Override point for customization after application launch.
         UNUserNotificationCenter.current().delegate = self
         
@@ -41,17 +45,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         let startRecordingCategory = UNNotificationCategory(identifier: "STARTRECORDING", actions: [startNow, dismiss], intentIdentifiers: [], options: [])
         
         let center = UNUserNotificationCenter.current()
-        center.setNotificationCategories([listenNowCategory, stopRecordingCategory])
+        center.setNotificationCategories([listenNowCategory, stopRecordingCategory, startRecordingCategory])
         
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
-        print("didReceive")
+        aelog("didReceive")
+        switch response.actionIdentifier {
+        case "start":
+            RecorderEngine.default.setupRecorder()
+        case "stop":
+            RecorderEngine.default.finishRecording(success: true)
+        case "listen":
+            break
+        default:
+            break
+        }
         completionHandler()
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
-        print("willPresent")
+        aelog("willPresent")
         completionHandler([.badge, .alert, .sound])
     }
     

@@ -11,7 +11,7 @@ target 'AudioExperiments' do
   pod 'RxCocoa'
   pod 'RxAVFoundation'
   pod 'RxBluetoothKit'
-
+  pod 'AEConsole'
   target 'AudioExperimentsTests' do
     inherit! :search_paths
     # Pods for testing
