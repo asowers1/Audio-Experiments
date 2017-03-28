@@ -8,27 +8,53 @@
 
 import UIKit
 import AVFoundation
+import UserNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UNUserNotificationCenter.current().delegate = self
         
-        do {
-            try AVAudioSession.sharedInstance().setActive(false, with: .notifyOthersOnDeactivation)
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
-            try AVAudioSession.sharedInstance().setActive(true)
-        } catch {
-            print(error)
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
+            if granted {
+                self.registerCategory()
+            }
         }
-        
+
         return true
     }
-
+    
+    func registerCategory() -> Void{
+        
+        let listenNow = UNNotificationAction(identifier: "listen", title: "Listen now", options: [UNNotificationActionOptions.foreground])
+        let dismiss = UNNotificationAction(identifier: "dismiss", title: "Dismiss", options: [])
+        let listenNowCategory = UNNotificationCategory(identifier: "NEWSUPDATEAVAILABLE", actions: [listenNow, dismiss], intentIdentifiers: [], options: [])
+        
+        let stopNow = UNNotificationAction(identifier: "stop", title: "Stop Recording", options: [])
+        let stopRecordingCategory = UNNotificationCategory(identifier: "STOPRECORDING", actions: [stopNow, dismiss], intentIdentifiers: [], options: [])
+        
+        let startNow = UNNotificationAction(identifier: "start", title: "Start Recording", options: [])
+        let startRecordingCategory = UNNotificationCategory(identifier: "STARTRECORDING", actions: [startNow, dismiss], intentIdentifiers: [], options: [])
+        
+        let center = UNUserNotificationCenter.current()
+        center.setNotificationCategories([listenNowCategory, stopRecordingCategory])
+        
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        print("didReceive")
+        completionHandler()
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        print("willPresent")
+        completionHandler([.badge, .alert, .sound])
+    }
+    
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.

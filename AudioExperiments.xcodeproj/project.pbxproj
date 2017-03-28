@@ -36,7 +36,10 @@
 		665F5E661E80674100AB9155 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 665F5E641E80674100AB9155 /* LaunchScreen.storyboard */; };
 		665F5E711E80674100AB9155 /* AudioExperimentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5E701E80674100AB9155 /* AudioExperimentsTests.swift */; };
 		665F5E7C1E80674100AB9155 /* AudioExperimentsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 665F5E7B1E80674100AB9155 /* AudioExperimentsUITests.swift */; };
+		66B8BCD51E89D021008AE866 /* BLE_connect04.caf in Resources */ = {isa = PBXBuildFile; fileRef = 66B8BCD41E89D021008AE866 /* BLE_connect04.caf */; };
+		66B8BCD71E8AB207008AE866 /* RecorderEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B8BCD61E8AB207008AE866 /* RecorderEngine.swift */; };
 		66EE98091E8475C50004CC57 /* VO_heather_SU_8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */; };
+		66F2DE031E89AB1D00BE522B /* PlayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F2DE021E89AB1D00BE522B /* PlayerEngine.swift */; };
 		F253944A111F203F2EC3C337 /* Pods_AudioExperiments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB021D10448F8EE98710533 /* Pods_AudioExperiments.framework */; };
 /* End PBXBuildFile section */
 
@@ -116,7 +119,10 @@
 		665F5E771E80674100AB9155 /* AudioExperimentsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AudioExperimentsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		665F5E7B1E80674100AB9155 /* AudioExperimentsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioExperimentsUITests.swift; sourceTree = "<group>"; };
 		665F5E7D1E80674100AB9155 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66B8BCD41E89D021008AE866 /* BLE_connect04.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BLE_connect04.caf; sourceTree = "<group>"; };
+		66B8BCD61E8AB207008AE866 /* RecorderEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderEngine.swift; sourceTree = "<group>"; };
 		66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = VO_heather_SU_8.wav; sourceTree = "<group>"; };
+		66F2DE021E89AB1D00BE522B /* PlayerEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerEngine.swift; sourceTree = "<group>"; };
 		9DB3BDDD0EC859A7D59DC6B4 /* Pods-AudioExperiments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperiments.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperiments/Pods-AudioExperiments.release.xcconfig"; sourceTree = "<group>"; };
 		ACB021D10448F8EE98710533 /* Pods_AudioExperiments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioExperiments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41B181CEC5854B3BF106FF7 /* Pods-AudioExperimentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperimentsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperimentsTests/Pods-AudioExperimentsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,6 +207,7 @@
 		664CC1661E845A0E000C3C00 /* 44KNzAudioprompts */ = {
 			isa = PBXGroup;
 			children = (
+				66B8BCD41E89D021008AE866 /* BLE_connect04.caf */,
 				664CC1671E845A0E000C3C00 /* bluetooth_connect.wav */,
 				664CC1681E845A0E000C3C00 /* bluetooth_search.wav */,
 				664CC1691E845A0E000C3C00 /* connect_fail.wav */,
@@ -252,6 +259,8 @@
 			children = (
 				665F5E5B1E80674100AB9155 /* AppDelegate.swift */,
 				665F5E5D1E80674100AB9155 /* ViewController.swift */,
+				66F2DE021E89AB1D00BE522B /* PlayerEngine.swift */,
+				66B8BCD61E8AB207008AE866 /* RecorderEngine.swift */,
 				665F5E5F1E80674100AB9155 /* Main.storyboard */,
 				665F5E621E80674100AB9155 /* Assets.xcassets */,
 				665F5E641E80674100AB9155 /* LaunchScreen.storyboard */,
@@ -458,6 +467,7 @@
 				664CC1821E845A0E000C3C00 /* reject_call01.wav in Resources */,
 				664CC17F1E845A0E000C3C00 /* play.wav in Resources */,
 				664CC1871E845A0E000C3C00 /* volume_down.wav in Resources */,
+				66B8BCD51E89D021008AE866 /* BLE_connect04.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,6 +670,8 @@
 			files = (
 				665F5E5E1E80674100AB9155 /* ViewController.swift in Sources */,
 				665F5E5C1E80674100AB9155 /* AppDelegate.swift in Sources */,
+				66F2DE031E89AB1D00BE522B /* PlayerEngine.swift in Sources */,
+				66B8BCD71E8AB207008AE866 /* RecorderEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -942,6 +954,7 @@
 				663C9A4F1E855FD90006F838 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		665F5E531E80674000AB9155 /* Build configuration list for PBXProject "AudioExperiments" */ = {
 			isa = XCConfigurationList;

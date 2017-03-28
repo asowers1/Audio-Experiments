@@ -7,6 +7,10 @@ target 'AudioExperiments' do
 
   # Pods for AudioExperiments
   pod 'SwiftyUserDefaults'
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'RxAVFoundation'
+  pod 'RxBluetoothKit'
 
   target 'AudioExperimentsTests' do
     inherit! :search_paths

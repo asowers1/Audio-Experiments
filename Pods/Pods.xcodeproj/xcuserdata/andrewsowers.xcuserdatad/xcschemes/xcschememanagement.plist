@@ -24,6 +24,26 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RxAVFoundation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxBluetoothKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxCocoa.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RxSwift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>SwiftyUserDefaults.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -31,6 +51,52 @@
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict/>
+	<dict>
+		<key>130B167142AA7AB84F00225D9728954F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39F883342D5029DCC7F5B9EDA7F16D4F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7BBF92427093330F1DAF0E16BD6010B4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7C899F3C5B56C4A8B87F66F09A2053CF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>932EFE7169CF6955B0E118BB03C5FC8B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>99563DECF5611098CDE5230C4EA89104</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BACCBB1AB8123BBFD27F63B5615998FB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C557C8605A948417D810C468DBB31BE9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CC9B0E68CF6A6B076E33F1A686A5EAB7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>

@@ -8,38 +8,71 @@
 
 import UIKit
 import AVFoundation
+import UserNotifications
 
 class ViewController: UITableViewController {
 
-    let audioFiles = ["VO_heather_SU_8", "bluetooth_connect", "bluetooth_search", "connect_fail", "hang_up", "low_battery", "pickup_call01", "play", "power_down"]
+    let actions = ["schedule news", "schedule recording"]
     var player: AVPlayer?
     
+    var isGrantedNotificationAccess:Bool = false
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.delegate = self
         self.tableView.dataSource = self
         tableView.reloadData()
-    }
-    
-    func interruped() {
-        print("interrupted")
-        do {
-            try AVAudioSession.sharedInstance().setActive(false, with: .notifyOthersOnDeactivation)
-        } catch {
-            print(error)
+        
+        UNUserNotificationCenter.current().requestAuthorization(
+            options: [.alert,.sound,.badge],
+            completionHandler: { (granted,error) in
+                self.isGrantedNotificationAccess = granted
         }
+        )
     }
     
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        if keyPath == "rate" {
-            if self.player!.rate == 0 {
-                self.interruped()
-            }
-        } else {
-            super.observeValue(forKeyPath: keyPath, of: object, change: change, context: context)
-        }
+    func postLocalNewsNotifciation() {
+        let content = UNMutableNotificationContent()
+        content.title = "News Demo"
+        content.subtitle = "From Skybuds"
+        content.body = "Breaking news update"
+        content.categoryIdentifier = "NEWSUPDATEAVAILABLE"
+        content.sound = UNNotificationSound(named: "BLE_connect04.caf")
+    
+        let trigger = UNTimeIntervalNotificationTrigger(
+            timeInterval: 5.0,
+            repeats: false)
+        
+        let request = UNNotificationRequest(
+            identifier: "com.skybuds.notifications.news",
+            content: content,
+            trigger: trigger
+        )
+
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
     }
     
+    func postLocalStartRecordingNotifciation() {
+        let content = UNMutableNotificationContent()
+        content.title = "Command Demo"
+        content.subtitle = "From Skybuds"
+        content.body = "Record a command"
+        content.categoryIdentifier = "STARTRECORDING"
+        content.sound = UNNotificationSound(named: "BLE_connect04.caf")
+        
+        let trigger = UNTimeIntervalNotificationTrigger(
+            timeInterval: 5.0,
+            repeats: false)
+        
+        let request = UNNotificationRequest(
+            identifier: "com.skybuds.notifications.start",
+            content: content,
+            trigger: trigger
+        )
+        
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+    }
+
     //MARK: - TableView -
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -50,22 +83,28 @@ class ViewController: UITableViewController {
             print(error)
         }
         
-        let sound = URL(fileURLWithPath: Bundle.main.path(forResource: audioFiles[indexPath.row], ofType: "wav")!)
-        player = AVPlayer(url: sound)
+        let action = actions[indexPath.row]
         
-        player?.play()
-        player?.addObserver(self, forKeyPath: "rate", options: NSKeyValueObservingOptions(rawValue: 0), context: nil)
+        switch action {
+        case "schedule news":
+            self.postLocalNewsNotifciation()
+        case "schedule recording":
+            self.postLocalStartRecordingNotifciation()
+        default:
+            let alert = UIAlertController(title: "Not found", message: "there was no function found called \(action)", preferredStyle: .alert)
+            self.present(alert, animated: true, completion: nil)
+        }
         
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as UITableViewCell
-        cell.textLabel?.text = audioFiles[indexPath.row]
+        cell.textLabel?.text = actions[indexPath.row]
         return cell
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return audioFiles.count
+        return actions.count
     }
 
 }

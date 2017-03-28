@@ -1,12 +1,28 @@
 PODS:
+  - RxAVFoundation (1.1.0):
+    - RxCocoa (~> 3.0)
+    - RxSwift (~> 3.0)
+  - RxBluetoothKit (3.0.7):
+    - RxSwift (~> 3.2)
+  - RxCocoa (3.3.1):
+    - RxSwift (~> 3.3)
+  - RxSwift (3.3.1)
   - SwiftyUserDefaults (3.0.0)
 
 DEPENDENCIES:
+  - RxAVFoundation
+  - RxBluetoothKit
+  - RxCocoa
+  - RxSwift
   - SwiftyUserDefaults
 
 SPEC CHECKSUMS:
+  RxAVFoundation: f89ce7008f69ddcecdba5c61145bed8598874116
+  RxBluetoothKit: edf26cc5a1edbee8eff59cb9d0af88ac4e95c847
+  RxCocoa: 7dcb7a1860fc9cd0e23dae67ab105fc2916670b6
+  RxSwift: 8fc9f2de6275a9101d518444e00bf32f1a42caac
   SwiftyUserDefaults: 0f1d45fc3aafb9064dac661e367f8f83fe21a4b4
 
-PODFILE CHECKSUM: 64710b53eef5ceda91fde341ab15d4fa70e05942
+PODFILE CHECKSUM: 2e2982eead33702c92a7ec9b423af7480cecb4d8
 
 COCOAPODS: 1.2.0
