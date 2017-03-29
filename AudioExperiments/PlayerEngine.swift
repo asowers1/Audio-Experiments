@@ -30,7 +30,7 @@ final public class PlayerEngine: NSObject {
     
     func play(local fileURL: URL) {
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print(error)
@@ -55,7 +55,7 @@ final public class PlayerEngine: NSObject {
     
     func play(sandbox fileString: String) {
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print(error)

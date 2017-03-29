@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func registerCategory() -> Void{
         
-        let listenNow = UNNotificationAction(identifier: "listen", title: "Listen now", options: [UNNotificationActionOptions.foreground])
+        let listenNow = UNNotificationAction(identifier: "listen", title: "Listen now", options: [])
         let dismiss = UNNotificationAction(identifier: "dismiss", title: "Dismiss", options: [])
         let listenNowCategory = UNNotificationCategory(identifier: "NEWSUPDATEAVAILABLE", actions: [listenNow, dismiss], intentIdentifiers: [], options: [])
         
@@ -57,7 +57,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         case "stop":
             RecorderEngine.default.finishRecording(success: true)
         case "listen":
-            break
+            PlayerEngine.default.play(sandbox: "VO_heather_SU_8")
         default:
             break
         }

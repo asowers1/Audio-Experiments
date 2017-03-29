@@ -26,7 +26,7 @@ final class RecorderEngine: NSObject, AVAudioRecorderDelegate {
         
         do {
             aelog("setup recorder")
-            try recordingSession.setCategory(AVAudioSessionCategoryPlayAndRecord)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: .mixWithOthers)
             try recordingSession.setActive(true)
             recordingSession.requestRecordPermission() { [unowned self] allowed in
                 DispatchQueue.main.async {
