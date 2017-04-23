@@ -4,10 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AE (Notification).xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>15</integer>
+		</dict>
+		<key>AE.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>14</integer>
+		</dict>
 		<key>AudioExperiments.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Intents.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>16</integer>
+		</dict>
+		<key>IntentsUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>17</integer>
+		</dict>
+		<key>NotificationContentExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
 		</dict>
 		<key>NotificationServiceExtension.xcscheme</key>
 		<dict>
@@ -17,6 +42,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>661CFFB01E9FBC0C00C52DD7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>663C9A451E855FD90006F838</key>
 		<dict>
 			<key>primary</key>
@@ -33,6 +63,21 @@
 			<true/>
 		</dict>
 		<key>665F5E761E80674100AB9155</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>66F3900D1EA3BBFB00CA474A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>66F390431EA70ED600CA474A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>66F3904C1EA70ED700CA474A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -10,6 +10,49 @@
 		0853FE8C5B6907A055DE6FF8 /* Pods_NotificationServiceExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E778E513BE3F2CAD699BD11 /* Pods_NotificationServiceExtension.framework */; };
 		414DC734F26F3B523087EE48 /* Pods_AudioExperimentsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAB5905A6B7207742FF2B934 /* Pods_AudioExperimentsUITests.framework */; };
 		450D59107AE9952FC6557361 /* Pods_AudioExperimentsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC5D8530F4F98814F6113A63 /* Pods_AudioExperimentsTests.framework */; };
+		661CFFB31E9FBC0C00C52DD7 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661CFFB21E9FBC0C00C52DD7 /* UserNotifications.framework */; };
+		661CFFB51E9FBC0C00C52DD7 /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 661CFFB41E9FBC0C00C52DD7 /* UserNotificationsUI.framework */; };
+		661CFFB81E9FBC0C00C52DD7 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661CFFB71E9FBC0C00C52DD7 /* NotificationViewController.swift */; };
+		661CFFBB1E9FBC0C00C52DD7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661CFFB91E9FBC0C00C52DD7 /* MainInterface.storyboard */; };
+		661CFFBF1E9FBC0C00C52DD7 /* NotificationContentExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 661CFFB11E9FBC0C00C52DD7 /* NotificationContentExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		661CFFC31E9FBC9300C52DD7 /* BLE_connect04.caf in Resources */ = {isa = PBXBuildFile; fileRef = 66B8BCD41E89D021008AE866 /* BLE_connect04.caf */; };
+		661CFFC41E9FBC9400C52DD7 /* BLE_connect04.caf in Resources */ = {isa = PBXBuildFile; fileRef = 66B8BCD41E89D021008AE866 /* BLE_connect04.caf */; };
+		661CFFC51E9FBC9600C52DD7 /* bluetooth_connect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1671E845A0E000C3C00 /* bluetooth_connect.wav */; };
+		661CFFC61E9FBC9700C52DD7 /* bluetooth_connect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1671E845A0E000C3C00 /* bluetooth_connect.wav */; };
+		661CFFC71E9FBC9900C52DD7 /* bluetooth_search.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1681E845A0E000C3C00 /* bluetooth_search.wav */; };
+		661CFFC81E9FBC9A00C52DD7 /* bluetooth_search.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1681E845A0E000C3C00 /* bluetooth_search.wav */; };
+		661CFFC91E9FBC9C00C52DD7 /* connect_fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1691E845A0E000C3C00 /* connect_fail.wav */; };
+		661CFFCA1E9FBC9D00C52DD7 /* connect_fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1691E845A0E000C3C00 /* connect_fail.wav */; };
+		661CFFCB1E9FBCA100C52DD7 /* hang_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16A1E845A0E000C3C00 /* hang_up.wav */; };
+		661CFFCC1E9FBCA100C52DD7 /* hang_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16A1E845A0E000C3C00 /* hang_up.wav */; };
+		661CFFCD1E9FBCA300C52DD7 /* low_battery.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16B1E845A0E000C3C00 /* low_battery.wav */; };
+		661CFFCE1E9FBCA400C52DD7 /* low_battery.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16B1E845A0E000C3C00 /* low_battery.wav */; };
+		661CFFCF1E9FBCA700C52DD7 /* pickup_call01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16C1E845A0E000C3C00 /* pickup_call01.wav */; };
+		661CFFD01E9FBCA700C52DD7 /* pickup_call01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16C1E845A0E000C3C00 /* pickup_call01.wav */; };
+		661CFFD11E9FBCA900C52DD7 /* pickup_call02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16D1E845A0E000C3C00 /* pickup_call02.wav */; };
+		661CFFD21E9FBCAA00C52DD7 /* pickup_call02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16D1E845A0E000C3C00 /* pickup_call02.wav */; };
+		661CFFD31E9FBCAC00C52DD7 /* play.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16E1E845A0E000C3C00 /* play.wav */; };
+		661CFFD41E9FBCAD00C52DD7 /* play.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16E1E845A0E000C3C00 /* play.wav */; };
+		661CFFD51E9FBCAF00C52DD7 /* power_down.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16F1E845A0E000C3C00 /* power_down.wav */; };
+		661CFFD61E9FBCB000C52DD7 /* power_down.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC16F1E845A0E000C3C00 /* power_down.wav */; };
+		661CFFD71E9FBCB300C52DD7 /* power_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1701E845A0E000C3C00 /* power_up.wav */; };
+		661CFFD81E9FBCB300C52DD7 /* power_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1701E845A0E000C3C00 /* power_up.wav */; };
+		661CFFD91E9FBCB500C52DD7 /* reject_call01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1711E845A0E000C3C00 /* reject_call01.wav */; };
+		661CFFDA1E9FBCB600C52DD7 /* reject_call01.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1711E845A0E000C3C00 /* reject_call01.wav */; };
+		661CFFDB1E9FBCB800C52DD7 /* reject_call02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1721E845A0E000C3C00 /* reject_call02.wav */; };
+		661CFFDC1E9FBCB800C52DD7 /* reject_call02.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1721E845A0E000C3C00 /* reject_call02.wav */; };
+		661CFFDD1E9FBCBB00C52DD7 /* voc_battery_out_pwrdn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1731E845A0E000C3C00 /* voc_battery_out_pwrdn.wav */; };
+		661CFFDE1E9FBCBB00C52DD7 /* voc_battery_out_pwrdn.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1731E845A0E000C3C00 /* voc_battery_out_pwrdn.wav */; };
+		661CFFDF1E9FBCBF00C52DD7 /* voc_call_rejected.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1741E845A0E000C3C00 /* voc_call_rejected.wav */; };
+		661CFFE01E9FBCBF00C52DD7 /* voc_call_rejected.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1741E845A0E000C3C00 /* voc_call_rejected.wav */; };
+		661CFFE11E9FBCC100C52DD7 /* voc_sb_notconnected.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1751E845A0E000C3C00 /* voc_sb_notconnected.wav */; };
+		661CFFE21E9FBCC200C52DD7 /* voc_sb_notconnected.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1751E845A0E000C3C00 /* voc_sb_notconnected.wav */; };
+		661CFFE31E9FBCC400C52DD7 /* volume_down.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1761E845A0E000C3C00 /* volume_down.wav */; };
+		661CFFE41E9FBCC500C52DD7 /* volume_down.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1761E845A0E000C3C00 /* volume_down.wav */; };
+		661CFFE51E9FBCC700C52DD7 /* volume_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1771E845A0E000C3C00 /* volume_up.wav */; };
+		661CFFE61E9FBCC800C52DD7 /* volume_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1771E845A0E000C3C00 /* volume_up.wav */; };
+		661CFFE71E9FBCCA00C52DD7 /* VO_heather_SU_8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */; };
+		661CFFE81E9FBCCB00C52DD7 /* VO_heather_SU_8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */; };
 		663C9A491E855FD90006F838 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 663C9A481E855FD90006F838 /* NotificationService.swift */; };
 		663C9A4D1E855FD90006F838 /* NotificationServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 663C9A461E855FD90006F838 /* NotificationServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		664CC1781E845A0E000C3C00 /* bluetooth_connect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 664CC1671E845A0E000C3C00 /* bluetooth_connect.wav */; };
@@ -43,10 +86,34 @@
 		66B8BCD71E8AB207008AE866 /* RecorderEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66B8BCD61E8AB207008AE866 /* RecorderEngine.swift */; };
 		66EE98091E8475C50004CC57 /* VO_heather_SU_8.wav in Resources */ = {isa = PBXBuildFile; fileRef = 66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */; };
 		66F2DE031E89AB1D00BE522B /* PlayerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F2DE021E89AB1D00BE522B /* PlayerEngine.swift */; };
+		66F390091EA3B8DA00CA474A /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F390081EA3B8DA00CA474A /* Identifiers.swift */; };
+		66F3900A1EA3B8FF00CA474A /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F390081EA3B8DA00CA474A /* Identifiers.swift */; };
+		66F3900B1EA3B90000CA474A /* Identifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F390081EA3B8DA00CA474A /* Identifiers.swift */; };
+		66F390121EA3BBFB00CA474A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F390101EA3BBFB00CA474A /* Interface.storyboard */; };
+		66F390141EA3BBFB00CA474A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F390131EA3BBFB00CA474A /* Assets.xcassets */; };
+		66F3901B1EA3BBFB00CA474A /* AE Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 66F3901A1EA3BBFB00CA474A /* AE Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		66F390221EA3BBFB00CA474A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F390211EA3BBFB00CA474A /* InterfaceController.swift */; };
+		66F390241EA3BBFB00CA474A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F390231EA3BBFB00CA474A /* ExtensionDelegate.swift */; };
+		66F390261EA3BBFB00CA474A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F390251EA3BBFB00CA474A /* NotificationController.swift */; };
+		66F390281EA3BBFB00CA474A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66F390271EA3BBFB00CA474A /* Assets.xcassets */; };
+		66F3902C1EA3BBFB00CA474A /* AE.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 66F3900E1EA3BBFB00CA474A /* AE.app */; };
+		66F390471EA70ED600CA474A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F390461EA70ED600CA474A /* IntentHandler.swift */; };
+		66F3904F1EA70ED700CA474A /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66F3904E1EA70ED700CA474A /* IntentsUI.framework */; };
+		66F390521EA70ED700CA474A /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66F390511EA70ED700CA474A /* IntentViewController.swift */; };
+		66F390551EA70ED700CA474A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66F390531EA70ED700CA474A /* MainInterface.storyboard */; };
+		66F390591EA70ED700CA474A /* IntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 66F3904D1EA70ED700CA474A /* IntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		66F3905C1EA70ED700CA474A /* Intents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 66F390441EA70ED600CA474A /* Intents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F253944A111F203F2EC3C337 /* Pods_AudioExperiments.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB021D10448F8EE98710533 /* Pods_AudioExperiments.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		661CFFBD1E9FBC0C00C52DD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 665F5E501E80674000AB9155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 661CFFB01E9FBC0C00C52DD7;
+			remoteInfo = NotificationContentExtension;
+		};
 		663C9A4B1E855FD90006F838 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 665F5E501E80674000AB9155 /* Project object */;
@@ -68,6 +135,34 @@
 			remoteGlobalIDString = 665F5E571E80674100AB9155;
 			remoteInfo = AudioExperiments;
 		};
+		66F3901C1EA3BBFB00CA474A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 665F5E501E80674000AB9155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F390191EA3BBFB00CA474A;
+			remoteInfo = "AE Extension";
+		};
+		66F3902A1EA3BBFB00CA474A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 665F5E501E80674000AB9155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F3900D1EA3BBFB00CA474A;
+			remoteInfo = AE;
+		};
+		66F390571EA70ED700CA474A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 665F5E501E80674000AB9155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F3904C1EA70ED700CA474A;
+			remoteInfo = IntentsUI;
+		};
+		66F3905A1EA70ED700CA474A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 665F5E501E80674000AB9155 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 66F390431EA70ED600CA474A;
+			remoteInfo = Intents;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,9 +172,34 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				66F390591EA70ED700CA474A /* IntentsUI.appex in Embed App Extensions */,
 				663C9A4D1E855FD90006F838 /* NotificationServiceExtension.appex in Embed App Extensions */,
+				66F3905C1EA70ED700CA474A /* Intents.appex in Embed App Extensions */,
+				661CFFBF1E9FBC0C00C52DD7 /* NotificationContentExtension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F390301EA3BBFB00CA474A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				66F3901B1EA3BBFB00CA474A /* AE Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F390341EA3BBFB00CA474A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				66F3902C1EA3BBFB00CA474A /* AE.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -89,6 +209,12 @@
 		2B66EC0C7324B879C42ACAED /* Pods-AudioExperimentsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperimentsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperimentsUITests/Pods-AudioExperimentsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		417AEB90DCF874A39390F4E6 /* Pods-AudioExperiments.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperiments.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperiments/Pods-AudioExperiments.debug.xcconfig"; sourceTree = "<group>"; };
 		43EECA866EF1BC6F1A4CD2F0 /* Pods-AudioExperimentsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperimentsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperimentsTests/Pods-AudioExperimentsTests.release.xcconfig"; sourceTree = "<group>"; };
+		661CFFB11E9FBC0C00C52DD7 /* NotificationContentExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContentExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		661CFFB21E9FBC0C00C52DD7 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		661CFFB41E9FBC0C00C52DD7 /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
+		661CFFB71E9FBC0C00C52DD7 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		661CFFBA1E9FBC0C00C52DD7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		661CFFBC1E9FBC0C00C52DD7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		663C9A461E855FD90006F838 /* NotificationServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		663C9A481E855FD90006F838 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		663C9A4A1E855FD90006F838 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +256,26 @@
 		66B8BCD61E8AB207008AE866 /* RecorderEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecorderEngine.swift; sourceTree = "<group>"; };
 		66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = VO_heather_SU_8.wav; sourceTree = "<group>"; };
 		66F2DE021E89AB1D00BE522B /* PlayerEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerEngine.swift; sourceTree = "<group>"; };
+		66F390081EA3B8DA00CA474A /* Identifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Identifiers.swift; sourceTree = "<group>"; };
+		66F3900E1EA3BBFB00CA474A /* AE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F390111EA3BBFB00CA474A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		66F390131EA3BBFB00CA474A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66F390151EA3BBFB00CA474A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66F3901A1EA3BBFB00CA474A /* AE Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AE Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F390201EA3BBFB00CA474A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		66F390211EA3BBFB00CA474A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		66F390231EA3BBFB00CA474A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		66F390251EA3BBFB00CA474A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		66F390271EA3BBFB00CA474A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		66F390291EA3BBFB00CA474A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66F390441EA70ED600CA474A /* Intents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Intents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F390461EA70ED600CA474A /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		66F390481EA70ED700CA474A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66F3904D1EA70ED700CA474A /* IntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = IntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		66F3904E1EA70ED700CA474A /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		66F390511EA70ED700CA474A /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		66F390541EA70ED700CA474A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		66F390561EA70ED700CA474A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DB3BDDD0EC859A7D59DC6B4 /* Pods-AudioExperiments.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperiments.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperiments/Pods-AudioExperiments.release.xcconfig"; sourceTree = "<group>"; };
 		ACB021D10448F8EE98710533 /* Pods_AudioExperiments.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioExperiments.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41B181CEC5854B3BF106FF7 /* Pods-AudioExperimentsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioExperimentsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioExperimentsTests/Pods-AudioExperimentsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -141,6 +287,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		661CFFAE1E9FBC0C00C52DD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661CFFB51E9FBC0C00C52DD7 /* UserNotificationsUI.framework in Frameworks */,
+				661CFFB31E9FBC0C00C52DD7 /* UserNotifications.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		663C9A431E855FD90006F838 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -175,6 +330,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66F390171EA3BBFB00CA474A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F390411EA70ED600CA474A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F3904A1EA70ED700CA474A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F3904F1EA70ED700CA474A /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -202,8 +379,21 @@
 				EC5D8530F4F98814F6113A63 /* Pods_AudioExperimentsTests.framework */,
 				FAB5905A6B7207742FF2B934 /* Pods_AudioExperimentsUITests.framework */,
 				1E778E513BE3F2CAD699BD11 /* Pods_NotificationServiceExtension.framework */,
+				661CFFB21E9FBC0C00C52DD7 /* UserNotifications.framework */,
+				661CFFB41E9FBC0C00C52DD7 /* UserNotificationsUI.framework */,
+				66F3904E1EA70ED700CA474A /* IntentsUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		661CFFB61E9FBC0C00C52DD7 /* NotificationContentExtension */ = {
+			isa = PBXGroup;
+			children = (
+				661CFFB71E9FBC0C00C52DD7 /* NotificationViewController.swift */,
+				661CFFB91E9FBC0C00C52DD7 /* MainInterface.storyboard */,
+				661CFFBC1E9FBC0C00C52DD7 /* Info.plist */,
+			);
+			path = NotificationContentExtension;
 			sourceTree = "<group>";
 		};
 		663C9A471E855FD90006F838 /* NotificationServiceExtension */ = {
@@ -238,16 +428,23 @@
 				664CC1771E845A0E000C3C00 /* volume_up.wav */,
 				66EE98081E8475C50004CC57 /* VO_heather_SU_8.wav */,
 			);
-			path = 44KNzAudioprompts;
+			name = 44KNzAudioprompts;
+			path = AudioExperiments/44KNzAudioprompts;
 			sourceTree = "<group>";
 		};
 		665F5E4F1E80674000AB9155 = {
 			isa = PBXGroup;
 			children = (
+				664CC1661E845A0E000C3C00 /* 44KNzAudioprompts */,
 				665F5E5A1E80674100AB9155 /* AudioExperiments */,
 				665F5E6F1E80674100AB9155 /* AudioExperimentsTests */,
 				665F5E7A1E80674100AB9155 /* AudioExperimentsUITests */,
 				663C9A471E855FD90006F838 /* NotificationServiceExtension */,
+				661CFFB61E9FBC0C00C52DD7 /* NotificationContentExtension */,
+				66F3900F1EA3BBFB00CA474A /* AE */,
+				66F3901E1EA3BBFB00CA474A /* AE Extension */,
+				66F390451EA70ED600CA474A /* Intents */,
+				66F390501EA70ED700CA474A /* IntentsUI */,
 				665F5E591E80674100AB9155 /* Products */,
 				03D35F1D1A20B4E78DCCABEA /* Pods */,
 				0EC7DB109063BFFC1F399B5F /* Frameworks */,
@@ -261,6 +458,11 @@
 				665F5E6C1E80674100AB9155 /* AudioExperimentsTests.xctest */,
 				665F5E771E80674100AB9155 /* AudioExperimentsUITests.xctest */,
 				663C9A461E855FD90006F838 /* NotificationServiceExtension.appex */,
+				661CFFB11E9FBC0C00C52DD7 /* NotificationContentExtension.appex */,
+				66F3900E1EA3BBFB00CA474A /* AE.app */,
+				66F3901A1EA3BBFB00CA474A /* AE Extension.appex */,
+				66F390441EA70ED600CA474A /* Intents.appex */,
+				66F3904D1EA70ED700CA474A /* IntentsUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -270,6 +472,7 @@
 			children = (
 				669DB89C1E8AECEC00C83620 /* AudioExperiments.entitlements */,
 				665F5E5B1E80674100AB9155 /* AppDelegate.swift */,
+				66F390081EA3B8DA00CA474A /* Identifiers.swift */,
 				665F5E5D1E80674100AB9155 /* ViewController.swift */,
 				66F2DE021E89AB1D00BE522B /* PlayerEngine.swift */,
 				66B8BCD61E8AB207008AE866 /* RecorderEngine.swift */,
@@ -278,7 +481,6 @@
 				665F5E641E80674100AB9155 /* LaunchScreen.storyboard */,
 				665F5E671E80674100AB9155 /* Info.plist */,
 				669DB8A11E8AF1EA00C83620 /* AEConsole.plist */,
-				664CC1661E845A0E000C3C00 /* 44KNzAudioprompts */,
 			);
 			path = AudioExperiments;
 			sourceTree = "<group>";
@@ -301,9 +503,76 @@
 			path = AudioExperimentsUITests;
 			sourceTree = "<group>";
 		};
+		66F3900F1EA3BBFB00CA474A /* AE */ = {
+			isa = PBXGroup;
+			children = (
+				66F390101EA3BBFB00CA474A /* Interface.storyboard */,
+				66F390131EA3BBFB00CA474A /* Assets.xcassets */,
+				66F390151EA3BBFB00CA474A /* Info.plist */,
+			);
+			path = AE;
+			sourceTree = "<group>";
+		};
+		66F3901E1EA3BBFB00CA474A /* AE Extension */ = {
+			isa = PBXGroup;
+			children = (
+				66F390211EA3BBFB00CA474A /* InterfaceController.swift */,
+				66F390231EA3BBFB00CA474A /* ExtensionDelegate.swift */,
+				66F390251EA3BBFB00CA474A /* NotificationController.swift */,
+				66F390271EA3BBFB00CA474A /* Assets.xcassets */,
+				66F390291EA3BBFB00CA474A /* Info.plist */,
+				66F3901F1EA3BBFB00CA474A /* Supporting Files */,
+			);
+			path = "AE Extension";
+			sourceTree = "<group>";
+		};
+		66F3901F1EA3BBFB00CA474A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				66F390201EA3BBFB00CA474A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		66F390451EA70ED600CA474A /* Intents */ = {
+			isa = PBXGroup;
+			children = (
+				66F390461EA70ED600CA474A /* IntentHandler.swift */,
+				66F390481EA70ED700CA474A /* Info.plist */,
+			);
+			path = Intents;
+			sourceTree = "<group>";
+		};
+		66F390501EA70ED700CA474A /* IntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				66F390511EA70ED700CA474A /* IntentViewController.swift */,
+				66F390531EA70ED700CA474A /* MainInterface.storyboard */,
+				66F390561EA70ED700CA474A /* Info.plist */,
+			);
+			path = IntentsUI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		661CFFB01E9FBC0C00C52DD7 /* NotificationContentExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661CFFC21E9FBC0C00C52DD7 /* Build configuration list for PBXNativeTarget "NotificationContentExtension" */;
+			buildPhases = (
+				661CFFAD1E9FBC0C00C52DD7 /* Sources */,
+				661CFFAE1E9FBC0C00C52DD7 /* Frameworks */,
+				661CFFAF1E9FBC0C00C52DD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NotificationContentExtension;
+			productName = NotificationContentExtension;
+			productReference = 661CFFB11E9FBC0C00C52DD7 /* NotificationContentExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		663C9A451E855FD90006F838 /* NotificationServiceExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 663C9A501E855FD90006F838 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */;
@@ -334,11 +603,16 @@
 				663C9A511E855FD90006F838 /* Embed App Extensions */,
 				5F8A16FC0D0C7748A0BCCD5F /* [CP] Embed Pods Frameworks */,
 				DAF09D0E43CD0388BEE4FC81 /* [CP] Copy Pods Resources */,
+				66F390341EA3BBFB00CA474A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				663C9A4C1E855FD90006F838 /* PBXTargetDependency */,
+				661CFFBE1E9FBC0C00C52DD7 /* PBXTargetDependency */,
+				66F3902B1EA3BBFB00CA474A /* PBXTargetDependency */,
+				66F390581EA70ED700CA474A /* PBXTargetDependency */,
+				66F3905B1EA70ED700CA474A /* PBXTargetDependency */,
 			);
 			name = AudioExperiments;
 			productName = AudioExperiments;
@@ -387,16 +661,89 @@
 			productReference = 665F5E771E80674100AB9155 /* AudioExperimentsUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		66F3900D1EA3BBFB00CA474A /* AE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F390311EA3BBFB00CA474A /* Build configuration list for PBXNativeTarget "AE" */;
+			buildPhases = (
+				66F3900C1EA3BBFB00CA474A /* Resources */,
+				66F390301EA3BBFB00CA474A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				66F3901D1EA3BBFB00CA474A /* PBXTargetDependency */,
+			);
+			name = AE;
+			productName = AE;
+			productReference = 66F3900E1EA3BBFB00CA474A /* AE.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		66F390191EA3BBFB00CA474A /* AE Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F3902D1EA3BBFB00CA474A /* Build configuration list for PBXNativeTarget "AE Extension" */;
+			buildPhases = (
+				66F390161EA3BBFB00CA474A /* Sources */,
+				66F390171EA3BBFB00CA474A /* Frameworks */,
+				66F390181EA3BBFB00CA474A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AE Extension";
+			productName = "AE Extension";
+			productReference = 66F3901A1EA3BBFB00CA474A /* AE Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		66F390431EA70ED600CA474A /* Intents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F390601EA70ED700CA474A /* Build configuration list for PBXNativeTarget "Intents" */;
+			buildPhases = (
+				66F390401EA70ED600CA474A /* Sources */,
+				66F390411EA70ED600CA474A /* Frameworks */,
+				66F390421EA70ED600CA474A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Intents;
+			productName = Intents;
+			productReference = 66F390441EA70ED600CA474A /* Intents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		66F3904C1EA70ED700CA474A /* IntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 66F3905D1EA70ED700CA474A /* Build configuration list for PBXNativeTarget "IntentsUI" */;
+			buildPhases = (
+				66F390491EA70ED700CA474A /* Sources */,
+				66F3904A1EA70ED700CA474A /* Frameworks */,
+				66F3904B1EA70ED700CA474A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IntentsUI;
+			productName = IntentsUI;
+			productReference = 66F3904D1EA70ED700CA474A /* IntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		665F5E501E80674000AB9155 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0820;
+				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = SkyBuds;
 				TargetAttributes = {
+					661CFFB01E9FBC0C00C52DD7 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DG5842TKF4;
+						ProvisioningStyle = Automatic;
+					};
 					663C9A451E855FD90006F838 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = DG5842TKF4;
@@ -405,7 +752,7 @@
 					665F5E571E80674100AB9155 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = DG5842TKF4;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 0;
@@ -439,6 +786,26 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 665F5E571E80674100AB9155;
 					};
+					66F3900D1EA3BBFB00CA474A = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DG5842TKF4;
+						ProvisioningStyle = Automatic;
+					};
+					66F390191EA3BBFB00CA474A = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DG5842TKF4;
+						ProvisioningStyle = Automatic;
+					};
+					66F390431EA70ED600CA474A = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DG5842TKF4;
+						ProvisioningStyle = Automatic;
+					};
+					66F3904C1EA70ED700CA474A = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = DG5842TKF4;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 665F5E531E80674000AB9155 /* Build configuration list for PBXProject "AudioExperiments" */;
@@ -458,15 +825,66 @@
 				665F5E6B1E80674100AB9155 /* AudioExperimentsTests */,
 				665F5E761E80674100AB9155 /* AudioExperimentsUITests */,
 				663C9A451E855FD90006F838 /* NotificationServiceExtension */,
+				661CFFB01E9FBC0C00C52DD7 /* NotificationContentExtension */,
+				66F3900D1EA3BBFB00CA474A /* AE */,
+				66F390191EA3BBFB00CA474A /* AE Extension */,
+				66F390431EA70ED600CA474A /* Intents */,
+				66F3904C1EA70ED700CA474A /* IntentsUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		661CFFAF1E9FBC0C00C52DD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661CFFE61E9FBCC800C52DD7 /* volume_up.wav in Resources */,
+				661CFFD61E9FBCB000C52DD7 /* power_down.wav in Resources */,
+				661CFFE21E9FBCC200C52DD7 /* voc_sb_notconnected.wav in Resources */,
+				661CFFDC1E9FBCB800C52DD7 /* reject_call02.wav in Resources */,
+				661CFFD41E9FBCAD00C52DD7 /* play.wav in Resources */,
+				661CFFDA1E9FBCB600C52DD7 /* reject_call01.wav in Resources */,
+				661CFFE81E9FBCCB00C52DD7 /* VO_heather_SU_8.wav in Resources */,
+				661CFFBB1E9FBC0C00C52DD7 /* MainInterface.storyboard in Resources */,
+				661CFFCD1E9FBCA300C52DD7 /* low_battery.wav in Resources */,
+				661CFFD21E9FBCAA00C52DD7 /* pickup_call02.wav in Resources */,
+				661CFFCC1E9FBCA100C52DD7 /* hang_up.wav in Resources */,
+				661CFFC61E9FBC9700C52DD7 /* bluetooth_connect.wav in Resources */,
+				661CFFE01E9FBCBF00C52DD7 /* voc_call_rejected.wav in Resources */,
+				661CFFC41E9FBC9400C52DD7 /* BLE_connect04.caf in Resources */,
+				661CFFDE1E9FBCBB00C52DD7 /* voc_battery_out_pwrdn.wav in Resources */,
+				661CFFD01E9FBCA700C52DD7 /* pickup_call01.wav in Resources */,
+				661CFFD81E9FBCB300C52DD7 /* power_up.wav in Resources */,
+				661CFFC81E9FBC9A00C52DD7 /* bluetooth_search.wav in Resources */,
+				661CFFE41E9FBCC500C52DD7 /* volume_down.wav in Resources */,
+				661CFFCA1E9FBC9D00C52DD7 /* connect_fail.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		663C9A441E855FD90006F838 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				661CFFCF1E9FBCA700C52DD7 /* pickup_call01.wav in Resources */,
+				661CFFC51E9FBC9600C52DD7 /* bluetooth_connect.wav in Resources */,
+				661CFFE11E9FBCC100C52DD7 /* voc_sb_notconnected.wav in Resources */,
+				661CFFCE1E9FBCA400C52DD7 /* low_battery.wav in Resources */,
+				661CFFD71E9FBCB300C52DD7 /* power_up.wav in Resources */,
+				661CFFC91E9FBC9C00C52DD7 /* connect_fail.wav in Resources */,
+				661CFFC31E9FBC9300C52DD7 /* BLE_connect04.caf in Resources */,
+				661CFFD91E9FBCB500C52DD7 /* reject_call01.wav in Resources */,
+				661CFFC71E9FBC9900C52DD7 /* bluetooth_search.wav in Resources */,
+				661CFFDD1E9FBCBB00C52DD7 /* voc_battery_out_pwrdn.wav in Resources */,
+				661CFFE71E9FBCCA00C52DD7 /* VO_heather_SU_8.wav in Resources */,
+				661CFFD51E9FBCAF00C52DD7 /* power_down.wav in Resources */,
+				661CFFE51E9FBCC700C52DD7 /* volume_up.wav in Resources */,
+				661CFFD31E9FBCAC00C52DD7 /* play.wav in Resources */,
+				661CFFE31E9FBCC400C52DD7 /* volume_down.wav in Resources */,
+				661CFFDF1E9FBCBF00C52DD7 /* voc_call_rejected.wav in Resources */,
+				661CFFDB1E9FBCB800C52DD7 /* reject_call02.wav in Resources */,
+				661CFFD11E9FBCA900C52DD7 /* pickup_call02.wav in Resources */,
+				661CFFCB1E9FBCA100C52DD7 /* hang_up.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +929,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F3900C1EA3BBFB00CA474A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F390141EA3BBFB00CA474A /* Assets.xcassets in Resources */,
+				66F390121EA3BBFB00CA474A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F390181EA3BBFB00CA474A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F390281EA3BBFB00CA474A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F390421EA70ED600CA474A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F3904B1EA70ED700CA474A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F390551EA70ED700CA474A /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -685,10 +1135,20 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		661CFFAD1E9FBC0C00C52DD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F3900A1EA3B8FF00CA474A /* Identifiers.swift in Sources */,
+				661CFFB81E9FBC0C00C52DD7 /* NotificationViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		663C9A421E855FD90006F838 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66F3900B1EA3B90000CA474A /* Identifiers.swift in Sources */,
 				663C9A491E855FD90006F838 /* NotificationService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -700,6 +1160,7 @@
 				665F5E5E1E80674100AB9155 /* ViewController.swift in Sources */,
 				665F5E5C1E80674100AB9155 /* AppDelegate.swift in Sources */,
 				66F2DE031E89AB1D00BE522B /* PlayerEngine.swift in Sources */,
+				66F390091EA3B8DA00CA474A /* Identifiers.swift in Sources */,
 				66B8BCD71E8AB207008AE866 /* RecorderEngine.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,9 +1181,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		66F390161EA3BBFB00CA474A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F390261EA3BBFB00CA474A /* NotificationController.swift in Sources */,
+				66F390241EA3BBFB00CA474A /* ExtensionDelegate.swift in Sources */,
+				66F390221EA3BBFB00CA474A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F390401EA70ED600CA474A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F390471EA70ED600CA474A /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66F390491EA70ED700CA474A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				66F390521EA70ED700CA474A /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		661CFFBE1E9FBC0C00C52DD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 661CFFB01E9FBC0C00C52DD7 /* NotificationContentExtension */;
+			targetProxy = 661CFFBD1E9FBC0C00C52DD7 /* PBXContainerItemProxy */;
+		};
 		663C9A4C1E855FD90006F838 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 663C9A451E855FD90006F838 /* NotificationServiceExtension */;
@@ -738,9 +1230,37 @@
 			target = 665F5E571E80674100AB9155 /* AudioExperiments */;
 			targetProxy = 665F5E781E80674100AB9155 /* PBXContainerItemProxy */;
 		};
+		66F3901D1EA3BBFB00CA474A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66F390191EA3BBFB00CA474A /* AE Extension */;
+			targetProxy = 66F3901C1EA3BBFB00CA474A /* PBXContainerItemProxy */;
+		};
+		66F3902B1EA3BBFB00CA474A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66F3900D1EA3BBFB00CA474A /* AE */;
+			targetProxy = 66F3902A1EA3BBFB00CA474A /* PBXContainerItemProxy */;
+		};
+		66F390581EA70ED700CA474A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66F3904C1EA70ED700CA474A /* IntentsUI */;
+			targetProxy = 66F390571EA70ED700CA474A /* PBXContainerItemProxy */;
+		};
+		66F3905B1EA70ED700CA474A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 66F390431EA70ED600CA474A /* Intents */;
+			targetProxy = 66F3905A1EA70ED700CA474A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		661CFFB91E9FBC0C00C52DD7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				661CFFBA1E9FBC0C00C52DD7 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		665F5E5F1E80674100AB9155 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -757,9 +1277,59 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		66F390101EA3BBFB00CA474A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66F390111EA3BBFB00CA474A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+		66F390531EA70ED700CA474A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				66F390541EA70ED700CA474A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		661CFFC01E9FBC0C00C52DD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DG5842TKF4;
+				INFOPLIST_FILE = NotificationContentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.NotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		661CFFC11E9FBC0C00C52DD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				DEVELOPMENT_TEAM = DG5842TKF4;
+				INFOPLIST_FILE = NotificationContentExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.NotificationContentExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		663C9A4E1E855FD90006F838 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DEF57041DBF326AE883EC272 /* Pods-NotificationServiceExtension.debug.xcconfig */;
@@ -889,14 +1459,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AudioExperiments/AudioExperiments.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Sowers (E9BA7USTPP)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrew Sowers (E9BA7USTPP)";
-				DEVELOPMENT_TEAM = DG5842TKF4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AudioExperiments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d86ab786-7433-4eda-bff1-285185644938";
-				PROVISIONING_PROFILE_SPECIFIER = "Skybuds Audio Experiments Development";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -909,14 +1479,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = AudioExperiments/AudioExperiments.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Alpha Audiotronics, Inc. (72N7PHVMGE)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Alpha Audiotronics, Inc.";
-				DEVELOPMENT_TEAM = DG5842TKF4;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = AudioExperiments/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "732d418f-862c-4601-ba3d-bfa714185e67";
-				PROVISIONING_PROFILE_SPECIFIER = "Skybuds Audio Experiments AdHoc Distribution";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -983,9 +1553,168 @@
 			};
 			name = Release;
 		};
+		66F3902E1EA3BBFB00CA474A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = DG5842TKF4;
+				INFOPLIST_FILE = "AE Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		66F3902F1EA3BBFB00CA474A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				DEVELOPMENT_TEAM = DG5842TKF4;
+				INFOPLIST_FILE = "AE Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		66F390321EA3BBFB00CA474A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Sowers (E9BA7USTPP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Andrew Sowers (E9BA7USTPP)";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DG5842TKF4;
+				IBSC_MODULE = AE_Extension;
+				INFOPLIST_FILE = AE/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		66F390331EA3BBFB00CA474A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alpha Audiotronics, Inc. (72N7PHVMGE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Alpha Audiotronics, Inc.";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DG5842TKF4;
+				IBSC_MODULE = AE_Extension;
+				INFOPLIST_FILE = AE/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		66F3905E1EA70ED700CA474A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Sowers (E9BA7USTPP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DG5842TKF4;
+				INFOPLIST_FILE = IntentsUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.IntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		66F3905F1EA70ED700CA474A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alpha Audiotronics, Inc. (72N7PHVMGE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DG5842TKF4;
+				INFOPLIST_FILE = IntentsUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.IntentsUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		66F390611EA70ED700CA474A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Andrew Sowers (E9BA7USTPP)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DG5842TKF4;
+				INFOPLIST_FILE = Intents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.Intents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		66F390621EA70ED700CA474A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Alpha Audiotronics, Inc. (72N7PHVMGE)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = DG5842TKF4;
+				INFOPLIST_FILE = Intents/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.skybuds.audio.experiments.Intents;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		661CFFC21E9FBC0C00C52DD7 /* Build configuration list for PBXNativeTarget "NotificationContentExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661CFFC01E9FBC0C00C52DD7 /* Debug */,
+				661CFFC11E9FBC0C00C52DD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		663C9A501E855FD90006F838 /* Build configuration list for PBXNativeTarget "NotificationServiceExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1030,6 +1759,40 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		66F3902D1EA3BBFB00CA474A /* Build configuration list for PBXNativeTarget "AE Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F3902E1EA3BBFB00CA474A /* Debug */,
+				66F3902F1EA3BBFB00CA474A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66F390311EA3BBFB00CA474A /* Build configuration list for PBXNativeTarget "AE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F390321EA3BBFB00CA474A /* Debug */,
+				66F390331EA3BBFB00CA474A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		66F3905D1EA70ED700CA474A /* Build configuration list for PBXNativeTarget "IntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F3905E1EA70ED700CA474A /* Debug */,
+				66F3905F1EA70ED700CA474A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		66F390601EA70ED700CA474A /* Build configuration list for PBXNativeTarget "Intents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				66F390611EA70ED700CA474A /* Debug */,
+				66F390621EA70ED700CA474A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -11,6 +11,8 @@ import AVFoundation
 import UserNotifications
 import AEConsole
 import AELog
+import AVFoundation
+import Intents
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -20,6 +22,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
     
         AEConsole.launch(with: self)
+        
+        INPreferences.requestSiriAuthorization( { status in
+            print(status)
+        })
+        
+        
         // Override point for customization after application launch.
         UNUserNotificationCenter.current().delegate = self
         
@@ -34,15 +42,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     
     func registerCategory() -> Void{
         
-        let listenNow = UNNotificationAction(identifier: "listen", title: "Listen now", options: [])
-        let dismiss = UNNotificationAction(identifier: "dismiss", title: "Dismiss", options: [])
-        let listenNowCategory = UNNotificationCategory(identifier: "NEWSUPDATEAVAILABLE", actions: [listenNow, dismiss], intentIdentifiers: [], options: [])
+        let listenNow = UNNotificationAction(identifier: Identifiers.listen, title: "Listen now", options: [])
+        let dismiss = UNNotificationAction(identifier: Identifiers.dismiss, title: "Dismiss", options: [])
+        let listenNowCategory = UNNotificationCategory(identifier: Identifiers.newsUpdateAvailableCategory, actions: [listenNow, dismiss], intentIdentifiers: [], options: [])
         
-        let stopNow = UNNotificationAction(identifier: "stop", title: "Stop Recording", options: [])
-        let stopRecordingCategory = UNNotificationCategory(identifier: "STOPRECORDING", actions: [stopNow, dismiss], intentIdentifiers: [], options: [])
+        let stopNow = UNNotificationAction(identifier: Identifiers.stop, title: "Stop Recording", options: [])
+        let stopRecordingCategory = UNNotificationCategory(identifier: Identifiers.stopRecordingCategory, actions: [stopNow, dismiss], intentIdentifiers: [], options: [])
         
-        let startNow = UNNotificationAction(identifier: "start", title: "Start Recording", options: [])
-        let startRecordingCategory = UNNotificationCategory(identifier: "STARTRECORDING", actions: [startNow, dismiss], intentIdentifiers: [], options: [])
+        let startNow = UNNotificationAction(identifier: Identifiers.start, title: "Start Recording", options: [])
+        let startRecordingCategory = UNNotificationCategory(identifier: Identifiers.startRecordingCategory, actions: [startNow, dismiss], intentIdentifiers: [], options: [])
         
         let center = UNUserNotificationCenter.current()
         center.setNotificationCategories([listenNowCategory, stopRecordingCategory, startRecordingCategory])
@@ -52,12 +60,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
         aelog("didReceive")
         switch response.actionIdentifier {
-        case "start":
+        case Identifiers.start:
             RecorderEngine.default.setupRecorder()
-        case "stop":
+        case Identifiers.stop:
             RecorderEngine.default.finishRecording(success: true)
-        case "listen":
+        case Identifiers.listen:
             PlayerEngine.default.play(sandbox: "VO_heather_SU_8")
+//            let synthesizer = AVSpeechSynthesizer()
+//            let utterance = AVSpeechUtterance(string: "Here's your weather update: Today's weather is partly cloudy with highs of 75 degrees")
+//            synthesizer.speak(utterance)
         default:
             break
         }
